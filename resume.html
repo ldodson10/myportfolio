@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latrisha Dodson - Resume</title>
+    <title>Latrisha Dodson - Resume | The Trust Aesthetic</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .resume-page {
-            background: var(--primary-bg);
+            background: var(--bg);
             min-height: 100vh;
             padding: 40px 0;
         }
@@ -17,31 +17,34 @@
         .resume-container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            color: #333;
+            background: var(--white);
+            color: var(--text-dark);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 40px var(--shadow);
         }
         
         .resume-header {
             text-align: center;
             margin-bottom: 40px;
-            border-bottom: 2px solid var(--accent-violet);
+            border-bottom: 3px solid var(--primary);
             padding-bottom: 20px;
         }
         
         .resume-name {
             font-size: 2.5rem;
             font-weight: 700;
-            color: var(--accent-violet);
+            color: var(--primary);
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
         .resume-title {
             font-size: 1.2rem;
-            color: var(--accent-teal);
+            color: var(--accent);
             margin-bottom: 20px;
+            font-style: italic;
         }
         
         .contact-info {
@@ -55,7 +58,12 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #666;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
         }
         
         .resume-section {
@@ -65,33 +73,43 @@
         .section-title {
             font-size: 1.3rem;
             font-weight: 600;
-            color: var(--accent-violet);
+            color: var(--primary);
             margin-bottom: 15px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .experience-item,
         .education-item {
             margin-bottom: 20px;
             padding-left: 20px;
-            border-left: 3px solid var(--accent-teal);
+            border-left: 4px solid var(--primary);
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-left: 0;
         }
         
         .job-title {
             font-weight: 600;
             font-size: 1.1rem;
-            color: #333;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .company {
-            color: var(--accent-teal);
+            color: var(--primary);
             font-weight: 500;
+            font-style: italic;
         }
         
         .date {
-            color: #666;
+            color: var(--accent);
             font-style: italic;
+            font-weight: 500;
         }
         
         .skills-grid {
@@ -101,34 +119,59 @@
         }
         
         .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid var(--accent-violet);
+            background: var(--bg);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 5px 15px var(--shadow);
         }
         
         .skill-category h4 {
-            color: var(--accent-violet);
-            margin-bottom: 10px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .skill-list {
-            color: #666;
-            line-height: 1.6;
+            color: var(--text-dark);
+            line-height: 1.8;
+            font-weight: 500;
         }
         
         .back-link {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: var(--accent-teal);
+            color: var(--primary);
             text-decoration: none;
             margin-bottom: 30px;
             transition: color 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
         .back-link:hover {
-            color: var(--accent-violet);
+            color: var(--accent);
+        }
+        
+        .resume-tagline {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--bg);
+            border-radius: 12px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .resume-tagline p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+            font-style: italic;
+            margin: 0;
         }
         
         @media print {
@@ -173,6 +216,10 @@
             </a>
             
             <div class="resume-container">
+                <div class="resume-tagline">
+                    <p>"Security, like design, depends on precision and trust."</p>
+                </div>
+                
                 <div class="resume-header">
                     <h1 class="resume-name">Latrisha Dodson</h1>
                     <p class="resume-title">Cybersecurity Innovator & Creative Strategist</p>
@@ -198,7 +245,7 @@
 
                 <div class="resume-section">
                     <h2 class="section-title">Professional Summary</h2>
-                    <p>Brooklyn-based cybersecurity innovator, creative strategist, and luxury pet-care entrepreneur with expertise in cloud security, design strategy, and creative direction. Passionate about integrating technical precision with visual storytelling to drive innovation across multiple industries.</p>
+                    <p>Brooklyn-based cybersecurity innovator, creative strategist, and luxury pet-care entrepreneur with expertise in cloud security, design strategy, and creative direction. Through years of working with high-touch clients and aesthetic design, I learned that security begins with trust. I bring human insight, visual intelligence, and a detail-driven mindset to cybersecurity, creating systems that feel both safe and beautiful.</p>
                 </div>
 
                 <div class="resume-section">
@@ -210,7 +257,8 @@
                                 AWS Security Services<br>
                                 SIEM Implementation<br>
                                 Threat Detection<br>
-                                Security Architecture
+                                Security Architecture<br>
+                                Terraform & HCL
                             </div>
                         </div>
                         <div class="skill-category">
@@ -219,7 +267,8 @@
                                 Python<br>
                                 JavaScript<br>
                                 HTML/CSS<br>
-                                SQL
+                                SQL<br>
+                                Flask & NLP
                             </div>
                         </div>
                         <div class="skill-category">
@@ -228,7 +277,8 @@
                                 Creative Direction<br>
                                 Brand Strategy<br>
                                 User Experience Design<br>
-                                Visual Storytelling
+                                Visual Storytelling<br>
+                                Trust & Care Principles
                             </div>
                         </div>
                         <div class="skill-category">
@@ -236,8 +286,9 @@
                             <div class="skill-list">
                                 GitHub<br>
                                 AWS Console<br>
-                                Security Tools<br>
-                                Design Software
+                                VirtualBox<br>
+                                pfSense & Kali Linux<br>
+                                Wazuh & OpenSearch
                             </div>
                         </div>
                     </div>
@@ -250,10 +301,10 @@
                         <div class="job-title">Cybersecurity Innovator</div>
                         <div class="company">Independent Consultant</div>
                         <div class="date">2023 - Present</div>
-                        <ul style="margin-top: 10px; color: #666;">
-                            <li>Developed SIEMplicity platform for AWS-based security analysis</li>
-                            <li>Implemented advanced threat detection capabilities</li>
-                            <li>Created comprehensive security architecture solutions</li>
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
+                            <li>Developed SOC-it-to-EM-SIEMlessly platform for AWS-based security analysis</li>
+                            <li>Implemented advanced threat detection capabilities with Wazuh and OpenSearch</li>
+                            <li>Created comprehensive security architecture solutions using Terraform</li>
                         </ul>
                     </div>
 
@@ -261,7 +312,7 @@
                         <div class="job-title">Creative Strategist</div>
                         <div class="company">Luxury Pet Care Innovation</div>
                         <div class="date">2022 - Present</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>Led creative direction for luxury pet care services</li>
                             <li>Integrated technology solutions with premium service delivery</li>
                             <li>Developed brand strategy and visual storytelling initiatives</li>
@@ -272,7 +323,7 @@
                         <div class="job-title">Design Strategy Consultant</div>
                         <div class="company">Various Clients</div>
                         <div class="date">2021 - Present</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>Provided design strategy consulting for tech startups</li>
                             <li>Developed user experience frameworks</li>
                             <li>Created visual identity systems and brand guidelines</li>
@@ -287,7 +338,7 @@
                         <div class="job-title">SOC-it-to-EM-SIEMlessly</div>
                         <div class="company">Cloud-native SIEM Automation Framework</div>
                         <div class="date">2025</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>Built cloud-native SIEM automation framework with Terraform, Lambda, and EventBridge</li>
                             <li>Implemented automated threat detection and response capabilities</li>
                             <li>Developed infrastructure as code for scalable security operations</li>
@@ -298,7 +349,7 @@
                         <div class="job-title">AWS S3 Lambda Ingestion Pipeline</div>
                         <div class="company">Cloud Incident Response Automation</div>
                         <div class="date">2025</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>Evolved AWS Lambda + S3 ingestion pipeline into SOC automation foundation</li>
                             <li>Integrated AWS GuardDuty, Security Hub, and automated response systems</li>
                             <li>Implemented HCL-based infrastructure for cloud security operations</li>
@@ -309,7 +360,7 @@
                         <div class="job-title">Cyber Range Lab AWS</div>
                         <div class="company">Infrastructure as Code</div>
                         <div class="date">2025</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>MIT Licensed AWS cyber range lab infrastructure built with Terraform</li>
                             <li>Designed cybersecurity training and testing environments</li>
                             <li>Implemented scalable cloud infrastructure for security education</li>
@@ -320,7 +371,7 @@
                         <div class="job-title">Network Security Lab</div>
                         <div class="company">IDS/IPS Testing Environment</div>
                         <div class="date">2025</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>VirtualBox-based IDS/IPS lab using pfSense, Kali Linux, and Metasploitable2</li>
                             <li>Implemented comprehensive network defense testing capabilities</li>
                             <li>Created hands-on cybersecurity training environment</li>
@@ -331,7 +382,7 @@
                         <div class="job-title">Windows Server 2022 Deployment Lab</div>
                         <div class="company">Enterprise Infrastructure</div>
                         <div class="date">2025</div>
-                        <ul style="margin-top: 10px; color: #666;">
+                        <ul style="margin-top: 10px; color: var(--text-dark);">
                             <li>Windows Server 2022 enterprise deployment lab with VirtualBox</li>
                             <li>Simulated Active Directory, DNS, and domain configuration</li>
                             <li>Developed enterprise-grade infrastructure testing environment</li>
@@ -342,13 +393,13 @@
                 <div class="resume-section">
                     <h2 class="section-title">Education & Certifications</h2>
                     
-                    <div class="education-item">
+                    <div class="experience-item">
                         <div class="job-title">Cybersecurity Specialization</div>
                         <div class="company">Various Online Platforms</div>
                         <div class="date">2023 - Present</div>
                     </div>
 
-                    <div class="education-item">
+                    <div class="experience-item">
                         <div class="job-title">Design Strategy & Creative Direction</div>
                         <div class="company">Professional Development</div>
                         <div class="date">2021 - Present</div>
@@ -357,11 +408,12 @@
 
                 <div class="resume-section">
                     <h2 class="section-title">Additional Information</h2>
-                    <ul style="color: #666; line-height: 1.8;">
+                    <ul style="color: var(--text-dark); line-height: 1.8;">
                         <li>Passionate about the intersection of technology and creativity</li>
                         <li>Active in cybersecurity communities and design networks</li>
                         <li>Committed to continuous learning and innovation</li>
                         <li>Strong advocate for diversity and inclusion in tech</li>
+                        <li>Believes security is the new luxury â€” and trust is its design</li>
                     </ul>
                 </div>
             </div>
