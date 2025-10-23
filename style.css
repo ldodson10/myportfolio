@@ -94,11 +94,22 @@ h1, h2, h3, h4, h5, h6 {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px var(--shadow);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero-subtitle {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+}
+
+.hero-description {
     font-size: 1.3rem;
     color: var(--text-dark);
     margin-bottom: 40px;
