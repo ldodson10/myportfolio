@@ -1,145 +1,371 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latrisha Dodson</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: linear-gradient(90deg, #3f87a6, #eb5a7e);
-      color: white;
-      text-align: center;
-      padding: 60px 20px 40px;
-    }
-    h1 {
-      margin: 0;
-    }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    h2 {
-      border-left: 4px solid #1a73e8;
-      padding-left: 10px;
-      color: #1a73e8;
-      margin-top: 40px;
-    }
-    p {
-      line-height: 1.6;
-    }
-    .skills span {
-      display: inline-block;
-      background: #f1f8ff;
-      padding: 6px 12px;
-      margin: 4px;
-      border-radius: 4px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .contact a {
-      margin: 0 10px;
-      color: #1a73e8;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latrisha Dodson - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .resume-page {
+            background: var(--primary-bg);
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            color: #333;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-violet);
+            padding-bottom: 20px;
+        }
+        
+        .resume-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-violet);
+            margin-bottom: 10px;
+        }
+        
+        .resume-title {
+            font-size: 1.2rem;
+            color: var(--accent-teal);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+        }
+        
+        .resume-section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--accent-violet);
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .experience-item,
+        .education-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-teal);
+        }
+        
+        .job-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        
+        .company {
+            color: var(--accent-teal);
+            font-weight: 500;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-violet);
+        }
+        
+        .skill-category h4 {
+            color: var(--accent-violet);
+            margin-bottom: 10px;
+        }
+        
+        .skill-list {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-teal);
+            text-decoration: none;
+            margin-bottom: 30px;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--accent-violet);
+        }
+        
+        @media print {
+            .resume-page {
+                background: white;
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .back-link {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .resume-container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .resume-name {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="resume-page">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            
+            <div class="resume-container">
+                <div class="resume-header">
+                    <h1 class="resume-name">Latrisha Dodson</h1>
+                    <p class="resume-title">Cybersecurity Innovator & Creative Strategist</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>latrishadodson@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Brooklyn, NY</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/latrisha-dodson</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/ldodson10</span>
+                        </div>
+                    </div>
+                </div>
 
-  <header>
-    <h1>Latrisha Dodson</h1>
-    <p>Cybersecurity Analyst | Creative Technologist | Lifelong Learner</p>
-    <p><em>Bridging intuitive design and technical defense—one secure solution at a time.</em></p>
-  </header>
+                <div class="resume-section">
+                    <h2 class="section-title">Professional Summary</h2>
+                    <p>Brooklyn-based cybersecurity innovator, creative strategist, and luxury pet-care entrepreneur with expertise in cloud security, design strategy, and creative direction. Passionate about integrating technical precision with visual storytelling to drive innovation across multiple industries.</p>
+                </div>
 
-  <main>
-    <h2>Summary</h2>
-    <p>
-      Cybersecurity Analyst trained through The Knowledge House Innovation Fellowship with hands-on experience in ethical hacking, network defense, and risk mitigation. Proven performance in CTF competitions, cloud deployments, and technical labs. With a professional foundation in wardrobe styling and storytelling, I merge artistic instinct with cyber precision to carve my own lane into tech.
-    </p>
+                <div class="resume-section">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Cloud Security</h4>
+                            <div class="skill-list">
+                                AWS Security Services<br>
+                                SIEM Implementation<br>
+                                Threat Detection<br>
+                                Security Architecture
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Programming</h4>
+                            <div class="skill-list">
+                                Python<br>
+                                JavaScript<br>
+                                HTML/CSS<br>
+                                SQL
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Design & Strategy</h4>
+                            <div class="skill-list">
+                                Creative Direction<br>
+                                Brand Strategy<br>
+                                User Experience Design<br>
+                                Visual Storytelling
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Platforms</h4>
+                            <div class="skill-list">
+                                GitHub<br>
+                                AWS Console<br>
+                                Security Tools<br>
+                                Design Software
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>Kali Linux</span>
-      <span>Snort IDS</span>
-      <span>pfSense</span>
-      <span>Wireshark</span>
-      <span>Burp Suite</span>
-      <span>VirtualBox</span>
-      <span>Nmap</span>
-      <span>Python (beginner)</span>
-      <span>GitHub</span>
-      <span>AWS EC2 & S3</span>
-      <span>Active Directory</span>
-      <span>Ubuntu/Linux CLI</span>
+                <div class="resume-section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">Cybersecurity Innovator</div>
+                        <div class="company">Independent Consultant</div>
+                        <div class="date">2023 - Present</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Developed SIEMplicity platform for AWS-based security analysis</li>
+                            <li>Implemented advanced threat detection capabilities</li>
+                            <li>Created comprehensive security architecture solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Creative Strategist</div>
+                        <div class="company">Luxury Pet Care Innovation</div>
+                        <div class="date">2022 - Present</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Led creative direction for luxury pet care services</li>
+                            <li>Integrated technology solutions with premium service delivery</li>
+                            <li>Developed brand strategy and visual storytelling initiatives</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Design Strategy Consultant</div>
+                        <div class="company">Various Clients</div>
+                        <div class="date">2021 - Present</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Provided design strategy consulting for tech startups</li>
+                            <li>Developed user experience frameworks</li>
+                            <li>Created visual identity systems and brand guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2 class="section-title">Key Projects</h2>
+                    
+                    <div class="experience-item">
+                        <div class="job-title">SOC-it-to-EM-SIEMlessly</div>
+                        <div class="company">Cloud-native SIEM Automation Framework</div>
+                        <div class="date">2025</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Built cloud-native SIEM automation framework with Terraform, Lambda, and EventBridge</li>
+                            <li>Implemented automated threat detection and response capabilities</li>
+                            <li>Developed infrastructure as code for scalable security operations</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">AWS S3 Lambda Ingestion Pipeline</div>
+                        <div class="company">Cloud Incident Response Automation</div>
+                        <div class="date">2025</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Evolved AWS Lambda + S3 ingestion pipeline into SOC automation foundation</li>
+                            <li>Integrated AWS GuardDuty, Security Hub, and automated response systems</li>
+                            <li>Implemented HCL-based infrastructure for cloud security operations</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Cyber Range Lab AWS</div>
+                        <div class="company">Infrastructure as Code</div>
+                        <div class="date">2025</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>MIT Licensed AWS cyber range lab infrastructure built with Terraform</li>
+                            <li>Designed cybersecurity training and testing environments</li>
+                            <li>Implemented scalable cloud infrastructure for security education</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Network Security Lab</div>
+                        <div class="company">IDS/IPS Testing Environment</div>
+                        <div class="date">2025</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>VirtualBox-based IDS/IPS lab using pfSense, Kali Linux, and Metasploitable2</li>
+                            <li>Implemented comprehensive network defense testing capabilities</li>
+                            <li>Created hands-on cybersecurity training environment</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="job-title">Windows Server 2022 Deployment Lab</div>
+                        <div class="company">Enterprise Infrastructure</div>
+                        <div class="date">2025</div>
+                        <ul style="margin-top: 10px; color: #666;">
+                            <li>Windows Server 2022 enterprise deployment lab with VirtualBox</li>
+                            <li>Simulated Active Directory, DNS, and domain configuration</li>
+                            <li>Developed enterprise-grade infrastructure testing environment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2 class="section-title">Education & Certifications</h2>
+                    
+                    <div class="education-item">
+                        <div class="job-title">Cybersecurity Specialization</div>
+                        <div class="company">Various Online Platforms</div>
+                        <div class="date">2023 - Present</div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="job-title">Design Strategy & Creative Direction</div>
+                        <div class="company">Professional Development</div>
+                        <div class="date">2021 - Present</div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2 class="section-title">Additional Information</h2>
+                    <ul style="color: #666; line-height: 1.8;">
+                        <li>Passionate about the intersection of technology and creativity</li>
+                        <li>Active in cybersecurity communities and design networks</li>
+                        <li>Committed to continuous learning and innovation</li>
+                        <li>Strong advocate for diversity and inclusion in tech</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <h2>Projects</h2>
-<div class="project">
- <p>
-  <strong>
-    <a href="https://ldodson10.github.io/contact-serverless-form/" target="_blank">
-      Contact Serverless Form - GitHub
-    </a></strong>
-</p>
-<p>
-  Built and deployed a responsive contact form using HTML, CSS, and JavaScript, integrated with a serverless backend and hosted on GitHub Pages.
-    </p>
-
-    <p><strong><a href="https://github.com/ldodson10/sentiment-app" target="_blank">Sentiment Analysis Web Tool – GitHub</a></strong><br>
-    Built a Flask web app using TextBlob and Bootstrap; deployed via AWS EC2 with S3 storage and user-facing UI. Includes live sentiment feedback and accessible design features.
-    </p>
-
-    <p><strong>Bloomberg Hackathon – Cybersecurity CTF</a></strong><br>
-    Earned 2nd place by solving 14 layered browser/network challenges. Reverse-engineered obfuscated JavaScript and exploited insecure methods using DevTools, Wireshark, and Burp Suite.
-    </p>
-
-    <p><strong><a href="https://github.com/ldodson10/network-security-lab" target="_blank">Network Security Lab – GitHub</a></strong><br>
-    Built a secure lab using pfSense, Kali, Metasploitable2, and Snort. Simulated attacks, monitored traffic via Wireshark, and documented findings.
-    </p>
-
-    <p><strong>TryHackMe & Linux Labs</strong><br>
-    Completed guided Capture The Flag challenges and Linux security labs focused on privilege escalation, file system navigation, and misconfiguration exploitation.
-    </p>
-
-    <p><strong>Cyber Sentinel CTF Challenge</strong><br>
-    Competed in a Department of Defense-sponsored challenge focused on OSINT, encryption, and threat detection. Successfully identified vulnerable endpoints and analyzed attack surfaces.
-    </p>
-
-    <h2>Experience</h2>
-    <p><strong>Cybersecurity Student – The Knowledge House</strong><br>
-    March 2025 – Present | Bronx, NY</p>
-    <ul>
-      <li>Conduct vulnerability assessments and simulate intrusion detection using Snort and Wireshark.</li>
-      <li>Harden Linux systems, configure firewall rules, and run threat containment labs in VirtualBox.</li>
-      <li>Collaborate in Agile teams to document and present projects via GitHub.</li>
-    </ul>
-
-    <h2>Education</h2>
-    <p><strong>Associate of Science in Fashion Marketing</strong><br>
-    The Art Institute of Philadelphia – Philadelphia, PA</p>
-
-    <div class="contact">
-      Connect:
-      <a href="mailto:latrishadodson@gmail.com">latrishadodson@gmail.com</a> |
-      <a href="https://github.com/ldodson10" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/latrishadodson/" target="_blank">LinkedIn</a>
-    </div>
-  </main>
-
 </body>
 </html>
-  </main>
-
-</body>
-</html
