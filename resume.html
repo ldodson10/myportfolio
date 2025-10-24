@@ -183,11 +183,41 @@
             .resume-container {
                 box-shadow: none;
                 border-radius: 0;
+                margin: 0;
+                padding: 20px;
             }
             
             .back-link {
                 display: none;
             }
+            
+            .resume-name {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 15px var(--shadow);
+            z-index: 1000;
+        }
+        
+        .print-button:hover {
+            background: #E55E00;
+            transform: translateY(-2px);
         }
         
         @media (max-width: 768px) {
@@ -209,6 +239,9 @@
 </head>
 <body>
     <div class="resume-page">
+        <button class="print-button" onclick="window.print()">
+            <i class="fas fa-print"></i> Print Resume
+        </button>
         <div class="container">
             <a href="index.html" class="back-link">
                 <i class="fas fa-arrow-left"></i>
