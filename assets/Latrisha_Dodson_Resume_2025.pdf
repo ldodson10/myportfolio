@@ -23,6 +23,7 @@ endobj
 /Resources <<
 /Font <<
 /F1 5 0 R
+/F2 6 0 R
 >>
 >>
 >>
@@ -30,36 +31,135 @@ endobj
 
 4 0 obj
 <<
-/Length 200
+/Length 1500
 >>
 stream
 BT
-/F1 24 Tf
-100 700 Td
+/F1 20 Tf
+100 750 Td
 (Latrisha Dodson) Tj
-0 -50 Td
-/F1 16 Tf
-(Cybersecurity Innovator & Creative Strategist) Tj
 0 -30 Td
+/F2 14 Tf
+(Cybersecurity Innovator & Creative Strategist) Tj
+0 -25 Td
+/F1 12 Tf
 (Brooklyn, NY) Tj
-0 -20 Td
+0 -15 Td
 (latrishadodson@gmail.com) Tj
-0 -20 Td
+0 -15 Td
 (linkedin.com/in/latrisha-dodson) Tj
-0 -20 Td
+0 -15 Td
 (github.com/ldodson10) Tj
-0 -40 Td
-/F1 18 Tf
+0 -30 Td
+/F1 14 Tf
 (PROFESSIONAL SUMMARY) Tj
 0 -20 Td
-/F1 12 Tf
+/F2 10 Tf
 (Brooklyn-based cybersecurity innovator, creative strategist, and luxury) Tj
-0 -15 Td
+0 -12 Td
 (pet-care entrepreneur with expertise in cloud security, design strategy,) Tj
-0 -15 Td
+0 -12 Td
 (and creative direction. Through years of working with high-touch clients) Tj
-0 -15 Td
-(and aesthetic design, I learned that security begins with trust.) Tj
+0 -12 Td
+(and aesthetic design, I learned that security begins with trust. I bring) Tj
+0 -12 Td
+(human insight, visual intelligence, and a detail-driven mindset to) Tj
+0 -12 Td
+(cybersecurity, creating systems that feel both safe and beautiful.) Tj
+0 -25 Td
+/F1 14 Tf
+(TECHNICAL SKILLS) Tj
+0 -20 Td
+/F2 10 Tf
+(Cloud Security: AWS Security Services, SIEM Implementation, Threat Detection) Tj
+0 -12 Td
+(Programming: Python, JavaScript, HTML/CSS, SQL, Flask & NLP) Tj
+0 -12 Td
+(Design & Strategy: Creative Direction, Brand Strategy, User Experience Design) Tj
+0 -12 Td
+(Tools & Platforms: GitHub, AWS Console, VirtualBox, pfSense & Kali Linux) Tj
+0 -25 Td
+/F1 14 Tf
+(PROFESSIONAL EXPERIENCE) Tj
+0 -20 Td
+/F2 10 Tf
+(Cybersecurity Innovator | Independent Consultant | 2023 - Present) Tj
+0 -12 Td
+(??? Developed SOC-it-to-EM-SIEMlessly platform for AWS-based security analysis) Tj
+0 -12 Td
+(??? Implemented advanced threat detection capabilities with Wazuh and OpenSearch) Tj
+0 -12 Td
+(??? Created comprehensive security architecture solutions using Terraform) Tj
+0 -20 Td
+/F2 10 Tf
+(Creative Strategist | Luxury Pet Care Innovation | 2022 - Present) Tj
+0 -12 Td
+(??? Led creative direction for luxury pet care services) Tj
+0 -12 Td
+(??? Integrated technology solutions with premium service delivery) Tj
+0 -12 Td
+(??? Developed brand strategy and visual storytelling initiatives) Tj
+0 -20 Td
+/F2 10 Tf
+(Design Strategy Consultant | Various Clients | 2021 - Present) Tj
+0 -12 Td
+(??? Provided design strategy consulting for tech startups) Tj
+0 -12 Td
+(??? Developed user experience frameworks) Tj
+0 -12 Td
+(??? Created visual identity systems and brand guidelines) Tj
+0 -25 Td
+/F1 14 Tf
+(KEY PROJECTS) Tj
+0 -20 Td
+/F2 10 Tf
+(SOC-it-to-EM-SIEMlessly | Cloud-native SIEM Automation Framework | 2025) Tj
+0 -12 Td
+(??? Built cloud-native SIEM automation framework with Terraform, Lambda, and EventBridge) Tj
+0 -12 Td
+(??? Implemented automated threat detection and response capabilities) Tj
+0 -12 Td
+(??? Developed infrastructure as code for scalable security operations) Tj
+0 -20 Td
+/F2 10 Tf
+(AWS S3 Lambda Ingestion Pipeline | Cloud Incident Response Automation | 2025) Tj
+0 -12 Td
+(??? Evolved AWS Lambda + S3 ingestion pipeline into SOC automation foundation) Tj
+0 -12 Td
+(??? Integrated AWS GuardDuty, Security Hub, and automated response systems) Tj
+0 -12 Td
+(??? Implemented HCL-based infrastructure for cloud security operations) Tj
+0 -20 Td
+/F2 10 Tf
+(Network Security Lab | IDS/IPS Testing Environment | 2025) Tj
+0 -12 Td
+(??? VirtualBox-based IDS/IPS lab using pfSense, Kali Linux, and Metasploitable2) Tj
+0 -12 Td
+(??? Implemented comprehensive network defense testing capabilities) Tj
+0 -12 Td
+(??? Created hands-on cybersecurity training environment) Tj
+0 -25 Td
+/F1 14 Tf
+(EDUCATION & CERTIFICATIONS) Tj
+0 -20 Td
+/F2 10 Tf
+(Cybersecurity Specialization | Various Online Platforms | 2023 - Present) Tj
+0 -12 Td
+(Design Strategy & Creative Direction | Professional Development | 2021 - Present) Tj
+0 -25 Td
+/F1 14 Tf
+(ADDITIONAL INFORMATION) Tj
+0 -20 Td
+/F2 10 Tf
+(??? Passionate about the intersection of technology and creativity) Tj
+0 -12 Td
+(??? Active in cybersecurity communities and design networks) Tj
+0 -12 Td
+(??? Committed to continuous learning and innovation) Tj
+0 -12 Td
+(??? Strong advocate for diversity and inclusion in tech) Tj
+0 -12 Td
+(??? Believes security is the new luxury ??? and trust is its design) Tj
 ET
 endstream
 endobj
@@ -68,23 +168,32 @@ endobj
 <<
 /Type /Font
 /Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
 /BaseFont /Helvetica
 >>
 endobj
 
 xref
-0 6
+0 7
 0000000000 65535 f 
 0000000009 00000 n 
 0000000058 00000 n 
 0000000115 00000 n 
 0000000274 00000 n 
-0000000521 00000 n 
+0000001774 00000 n 
+0000002021 00000 n 
 trailer
 <<
-/Size 6
+/Size 7
 /Root 1 0 R
 >>
 startxref
-580
+2070
 %%EOF
