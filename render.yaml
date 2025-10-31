@@ -1,7 +1,11 @@
 ﻿services:
- - type: web
-  name: the-trust-aesthetic
-  env: static
-  buildCommand: ""
-  staticPublishPath: "."
-  pullRequestPreviewsEnabled: false
+  - type: web
+    name: trust-aesthetic-portfolio
+    env: node
+    rootDir: apps/server
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: CORS_ORIGIN
+        value: "*"
