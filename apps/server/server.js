@@ -1,3 +1,4 @@
+// Trust Aesthetic Portfolio API
 import express from "express";
 import cors from "cors";
 
@@ -15,10 +16,14 @@ app.get("/", (req, res) => {
 
 // Health check route
 app.get("/api/health", (req, res) => {
-  res.json({ status: "ok", service: "Trust Aesthetic API" });
+  res.json({
+    status: "ok",
+    service: "Trust Aesthetic API",
+    environment: process.env.NODE_ENV || "local",
+  });
 });
 
-// Example data route
+// Example route
 app.get("/api/projects", (req, res) => {
   res.json([
     { id: 1, name: "SIEMplicity", focus: "Incident Response Automation" },
@@ -26,6 +31,12 @@ app.get("/api/projects", (req, res) => {
   ]);
 });
 
+// Catch-all fallback to ensure API routes resolve correctly
+app.use((req, res) => {
+  res.status(404).json({ error: "Not Found" });
+});
+
+// Start the server
 app.listen(PORT, () => {
   console.log(`✅ Server running on port ${PORT}`);
 });
