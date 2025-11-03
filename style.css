@@ -278,6 +278,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Projects Section */
+.project-card.live {
+    border-left: 4px solid #1a73e8;
+  }
+  
+  .project-tag {
+    background: #e3f2fd;
+    color: #0b3954;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
 .projects-section {
     padding: 100px 0;
     background: var(--bg);
