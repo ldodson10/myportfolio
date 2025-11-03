@@ -1,7 +1,7 @@
 {
-  "name": "trust-aesthetic-portfolio",
+  "name": "trust-aesthetic-api",
   "version": "1.0.0",
-  "description": "Node server for Trust Aesthetic portfolio",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
